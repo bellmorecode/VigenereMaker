@@ -9,12 +9,13 @@
         mc:Ignorable="d" ResizeMode="NoResize"
         DataContext="{Binding Source={StaticResource Locator}, Path=Main}"
         Title="{Binding Title}" Height="538.877" Width="800" Icon="favicon.ico">
-    <Grid Background="#bbbeee">
+    <Grid Background="#999">
         <Grid.Resources>
             <Style x:Key="SquareCell" TargetType="TextBlock">
                 <Setter Property="HorizontalAlignment" Value="Center"></Setter>
                 <Setter Property="VerticalAlignment" Value="Center"></Setter>
-
+                <Setter Property="FontSize" Value="15"></Setter>
+                <Setter Property="Margin" Value="1"></Setter>
                 <Setter Property="FontWeight" Value="SemiBold"></Setter>
             </Style>
             <Style x:Key="SquareHNavCell" TargetType="Button">
@@ -47,53 +48,53 @@
             <vm:MatrixLegendLabelConverter x:Key="leglabels"></vm:MatrixLegendLabelConverter>
         </Grid.Resources>
         <Grid.RowDefinitions>
-            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="25"></RowDefinition>
             <RowDefinition></RowDefinition>
-            <RowDefinition Height="140"></RowDefinition>
-            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="50"></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="30"></ColumnDefinition>
+            <ColumnDefinition Width="5*"></ColumnDefinition>
+            <ColumnDefinition Width="4*"></ColumnDefinition>
             <ColumnDefinition Width="50"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
         <Grid Grid.Row="2" Grid.Column="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="5"></RowDefinition>
+                
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
-                <RowDefinition Height="5"></RowDefinition>
+                
             </Grid.RowDefinitions>
 
             
-            <TextBox Grid.Row="1" Margin="10" FontSize="18" FontWeight="Bold" Foreground="DodgerBlue"
+            <TextBox Grid.Row="0" Margin="10" FontSize="16" FontWeight="Bold" Foreground="#333"
                      Background="WhiteSmoke"
                      VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
                      Text="{Binding RowPattern, Mode=TwoWay}"></TextBox>
-            <Button Grid.Row="2" Margin="15,0,15,30" 
-                    Background="Navy" Foreground="WhiteSmoke" BorderBrush="#222" BorderThickness="1"
-                    FontSize="20" Command="{Binding SavePattern}" >Save Sequence</Button>
+            <Button Grid.Row="1" Margin="15,0,15,10" 
+                    Background="#444" Foreground="WhiteSmoke" BorderBrush="#222" BorderThickness="1"
+                    FontSize="14" Command="{Binding SavePattern}" >Save Sequence</Button>
 
         </Grid>
 
         <Grid Grid.Row="2" Grid.Column="2">
             <Grid.RowDefinitions>
-                <RowDefinition Height="5"></RowDefinition>
+                
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
-                <RowDefinition Height="5"></RowDefinition>
+                
             </Grid.RowDefinitions>
 
-            <TextBox Grid.Row="1" Margin="10" FontSize="18" FontWeight="Bold" Foreground="#333"
+            <TextBox Grid.Row="0" Margin="10" FontSize="16" FontWeight="Bold" Foreground="#333"
                      Background="WhiteSmoke"
                      VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
                      Text="{Binding Paraphrase, Mode=TwoWay}" ></TextBox>
-            <Button Grid.Row="2" Margin="15,0,15,30" 
-                    Command="{Binding SaveParaphrase}"
-                    Background="Navy" Foreground="WhiteSmoke" BorderBrush="#222" BorderThickness="1"
-                    FontSize="20" >Save Paraphrase</Button>
+            <Button Grid.Row="1" Margin="15,0,15,10" 
+                    Command="{Binding SaveParaphrase}" 
+                    Background="#444" Foreground="WhiteSmoke" 
+                    FontSize="14" >Save Paraphrase</Button>
 
         </Grid>
 
@@ -329,7 +330,7 @@
             </Button>
         </Grid>
 
-        <Grid x:Name="TheSquare" Grid.Row="1" Grid.Column="1" Background="PaleGoldenrod">
+        <Grid x:Name="TheSquare" Grid.Row="1" Grid.Column="1" Background="#CCC">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
