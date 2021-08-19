@@ -39,7 +39,7 @@
                 <Setter Property="FontWeight" Value="SemiBold"></Setter>
             </Style>
             <Style x:Key="InputBox" TargetType="TextBox">
-                <Setter Property="Margin" Value="20"></Setter>
+                <Setter Property="Margin" Value="10"></Setter>
                 <Setter Property="Padding" Value="5"></Setter>
                 <Setter Property="FontSize" Value="18"></Setter>
             </Style>
@@ -67,7 +67,7 @@
                      Background="WhiteSmoke"
                      VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
                      Text="{Binding RowPattern, Mode=TwoWay}"></TextBox>
-            <Button Grid.Row="1" Margin="15,0,15,10" 
+            <Button Grid.Row="1" Margin="10,0,10,10" 
                     Background="#444" Foreground="WhiteSmoke" BorderBrush="#222" BorderThickness="1"
                     FontSize="14" Command="{Binding SavePattern}" >Update Alphabet order</Button>
         </Grid>
@@ -80,7 +80,7 @@
                      Background="WhiteSmoke"
                      VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
                      Text="{Binding Paraphrase, Mode=TwoWay}" ></TextBox>
-            <Button Grid.Row="1" Margin="15,0,15,10" 
+            <Button Grid.Row="1" Margin="10,0,10,10" 
                     Command="{Binding SaveParaphrase}" 
                     Background="#444" Foreground="WhiteSmoke" 
                     FontSize="14" >Update Secret Keyword</Button>
@@ -96,7 +96,7 @@
                 <RowDefinition Height="2*"></RowDefinition>
             </Grid.RowDefinitions>
 
-            <TextBlock Grid.Row="2" Text="{Binding ParaphraseInfinityBreadcrumb}" Margin="27,0,0,0" FontSize="18"  VerticalAlignment="Center" MaxWidth="330" ></TextBlock>
+            <TextBlock Grid.Row="2" Text="{Binding ParaphraseInfinityBreadcrumb}" Margin="10,0,0,0" FontSize="18"  VerticalAlignment="Center" MaxWidth="330" ></TextBlock>
 
             <TextBox Grid.Row="1" MaxLines="50" Style="{StaticResource InputBox}" Text="{Binding TopBoxText, Mode=TwoWay}"></TextBox>
             <TextBox Grid.Row="3" MaxLines="50"  Style="{StaticResource InputBox}" Text="{Binding BottomBoxText}"></TextBox>
