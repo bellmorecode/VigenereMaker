@@ -3,6 +3,10 @@
 ## Overview
 This is a demo app that you can use to encrypt and decrypt text-based messages with a Vigenere cipher.
 
+You can try the application here: 
+
+https://gfd.blob.core.windows.net/vig/VigenereMakerApp.application
+
 ## What is a cipher? 
 a Cipher is a method of scrambling text to be able to protect the content of the message. 
 
