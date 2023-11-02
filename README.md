@@ -1,7 +1,7 @@
 # VigenereMaker
 
 ## Overview
-This is a demo app that you can use to encrypt and decrypt text-based messages with a Vigenere cipher.
+This is a tool for crafting messages with tailored encryption algorithm.
 
 You can try the application here: 
 
